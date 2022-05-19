@@ -7,5 +7,7 @@ namespace IngressoMVC.Models
 {
     public class AtorFilme
     {
+        public Ator  Ator { get; set; }
+        public Filme Filme { get; set; }
     }
 }
