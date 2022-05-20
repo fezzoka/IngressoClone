@@ -8,13 +8,9 @@ namespace IngressoMVC.Models
 {
     public class Ator : Artista
     {
-        
-        public string nome { get; set; }
-        public string Bio { get; set; }
-        public string FotoPerfilURL { get; set; }
-        public DateTime DataCadastro { get ; set ; }
-        public DateTime DataAlteracao { get  ; set ; }
-        public int id { get ; set ; }
+        protected Ator(string nome, string bio, string fotoPerfilURL) : base(nome, bio, fotoPerfilURL)
+        {
+        }
         #region relacionamento
         public List<Filme> AtoresFilmes { get; set; }
         #endregion
